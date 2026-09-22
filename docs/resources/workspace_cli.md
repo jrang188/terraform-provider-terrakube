@@ -59,6 +59,7 @@ resource "terrakube_workspace_cli" "sample3" {
 
 ### Optional
 
+- `agent_id` (String) Workspace executor agent ID. If you leave it empty, it defaults to the organization's default executor.
 - `description` (String) Workspace CLI description
 - `module_ssh_key` (String) SSH key ID (see terrakube_ssh) used to download private Terraform/OpenTofu modules referenced via git-based module sources within this workspace. Leave unset to leave any existing value untouched; set to an empty string to clear it.
 - `project_id` (String) Id of the project this workspace belongs to. Leave unset to leave any existing project assignment (e.g. made outside Terraform) untouched.

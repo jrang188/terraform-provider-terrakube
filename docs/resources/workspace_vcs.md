@@ -60,6 +60,7 @@ resource "terrakube_workspace_vcs" "sample2" {
 
 ### Optional
 
+- `agent_id` (String) Workspace executor agent ID. If you leave it empty, it defaults to the organization's default executor.
 - `allow_remote_apply` (Boolean) Wether to allow remote apply. By default false to respect VCS philosophy.
 - `branch` (String) Workspace VCS branch
 - `description` (String) Workspace VCS description
